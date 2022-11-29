@@ -30,6 +30,18 @@ body {
     left: 50%;
 }
 
+/* clock middle point */
+.middle-point {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+
+}
+
 /* 50% off the hand are hidden in this code section  */
 .hidden {
     border: none;
@@ -63,6 +75,37 @@ body {
     width: 55%;
 }
 
+
+/* 12,3,6,8 time status  */
+.time-status {
+    position: absolute;
+    font: 3rem sans-serif;
+    transform: rotate(-90deg);
+}
+
+.twelve {
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.three {
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg);
+}
+
+.six {
+    top: 50%;
+    left: 90%;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.nine {
+    top: 88%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg);
+}
 
 
 

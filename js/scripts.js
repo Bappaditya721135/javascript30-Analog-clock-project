@@ -4,12 +4,14 @@
 
 const clockTime = function() {
     const dateTime = new Date();
-    console.log(dateTime);
+    // console.log(dateTime);
 
     const hour = dateTime.getHours();
     const min = dateTime.getMinutes();
     const sec = dateTime.getSeconds();
  
+    // this section is for hour hand rotation
+    const hourRotation = (hour*30)+(min*0.5);
 
 
     // sec section 
@@ -19,9 +21,10 @@ const clockTime = function() {
     document.querySelector('.min').style.transform = `translateX(-50%) rotate(${min*6}deg)`
 
     // hour section 
-    document.querySelector('.hour').style.transform = `translateX(-50%) rotate(${hour*30}deg)`
+    document.querySelector('.hour').style.transform = `translateX(-50%) rotate(${hourRotation}deg)`
     
-}
+};
+
 setInterval(clockTime,1000);
 
 
