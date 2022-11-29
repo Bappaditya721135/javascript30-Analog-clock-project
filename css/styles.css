@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    color: white;
+    background: linear-gradient(to bottom, #231942, #003049);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* clock frame  */
+.clock {
+    border: 3px solid white;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+
+/* all the hour min sec hand are positioned in the middle in this section */
+.mid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* 50% off the hand are hidden in this code section  */
+.hidden {
+    border: none;
+}
+ 
+/* hour hand section  */
+.hour {
+    width: 280px;
+    transform: translateX(-50%) rotate(3deg);
+}
+.show-hour {
+    border: 3px solid black;
+    width: 55%;
+}
+
+/* min hand section  */
+.min {
+    width: 350px;
+}
+.show-min {
+    border: 2px solid red;
+    width: 55%;
+}
+
+/* sec hand section  */
+.sec {
+    width: 350px;
+}
+.show-sec {
+    border: 2px solid white;
+    width: 55%;
+}
+
+
+
+
+
+
+
